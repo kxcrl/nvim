@@ -2,10 +2,12 @@ return {
   {
     "neovim/nvim-lspconfig",
     dependencies = {
+      "DanielGavin/ols",
       "simrat39/rust-tools.nvim",
     },
     opts = {
       servers = {
+        ols = {},
         rust_analyzer = {},
       },
       setup = {
